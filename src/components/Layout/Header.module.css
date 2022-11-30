@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 2rem;
+  height: 80px;
+}
+
+header h3 {
+  font-size: 1.2rem;
+  display: grid;
+  place-items: center;
+}
+
+.header button {
+  background-color: transparent;
+  color: inherit;
+  border: none;
+  font-size: 0.8rem;
+}
+
+.icon {
+  margin-right: 0.5rem;
+}
+
+@media (min-width: 500px) {
+  header h3 {
+    font-size: 1.5rem;
+  }
+
+  .header button {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .header {
+    padding-inline: 4rem;
+  }
+}

@@ -1,0 +1,69 @@
+.section {
+  padding: 2rem;
+  min-height: calc(100vh - 80px);
+}
+
+.input {
+  display: flex;
+  place-items: center;
+  border-radius: 3px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.filters input,
+.filters select {
+  font: inherit;
+  padding: 1rem 3rem;
+  border: none;
+}
+
+.filters input {
+  display: block;
+  width: 100%;
+}
+
+.filters input::placeholder {
+  color: hsl(0, 0%, 52%);
+}
+
+.filters select {
+  margin-top: 2rem;
+}
+
+.icon {
+  margin-inline: 1rem;
+  color: hsl(0, 0%, 52%);
+}
+
+.countries-list {
+  margin: 0 auto;
+  max-width: 70rem;
+}
+
+.noMatch {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+@media (min-width: 900px) {
+  .countries-list {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  }
+
+  .filters {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .filters input {
+    display: inline;
+    width: auto;
+    margin-bottom: 0;
+  }
+
+  .filters select {
+    margin-top: 0;
+  }
+}

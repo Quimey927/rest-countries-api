@@ -1,0 +1,53 @@
+.country {
+  width: 320px;
+  margin-top: 5rem;
+}
+
+.country-shadow {
+  box-shadow: 0 0 0 20px rgba(14, 34, 25, 0.1);
+}
+
+.country-item img {
+  width: 320px;
+  height: 200px;
+}
+
+.country-item div {
+  padding: 1rem;
+}
+
+.country-item h3 {
+  font-size: 2rem;
+  margin-block: 1rem;
+}
+
+.country-item span {
+  font-weight: 300;
+}
+
+.link {
+  text-decoration: none;
+}
+
+@media (min-width: 900px) {
+  .country {
+    width: 240px;
+  }
+
+  .country-item {
+    font-size: 1rem;
+  }
+
+  .country-item img {
+    width: 240px;
+    height: 150px;
+  }
+
+  .country-item h3 {
+    font-size: 1.5rem;
+  }
+
+  .country-item p {
+    font-size: 0.8rem;
+  }
+}
