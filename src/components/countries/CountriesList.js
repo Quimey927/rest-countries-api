@@ -65,7 +65,7 @@ const CountriesList = (props) => {
   );
 
   let countriesList = (
-    <p className={noMatchClasses}>No countries matches the queries.</p>
+    <p className={noMatchClasses}>No country matches the queries.</p>
   );
 
   if (filteredCountries.length > 0) {

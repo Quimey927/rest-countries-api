@@ -1,36 +1,14 @@
-import { useState, useEffect, Fragment } from 'react';
+import { useContext, Fragment } from 'react';
 
+import CountriesContext from '../store/countries-context';
 import CountriesList from '../components/countries/CountriesList';
-import useHttp from '../hooks/use-http';
-import addDots from '../utils/add-dots';
 
-const AllCountries = () => {
-  const [countries, setCountries] = useState([]);
+const AllCountries = (props) => {
+  const countriesCtx = useContext(CountriesContext);
 
-  const { isLoading, error, sendRequest: fetchCountries } = useHttp();
+  const { countries } = countriesCtx;
 
-  useEffect(() => {
-    const transformCountries = (countries) => {
-      const transformedCountries = countries.map((country) => {
-        return {
-          id: Math.random(),
-          name: country.name.common,
-          population: addDots(country.population),
-          region: country.region,
-          flag: country.flags.png,
-          subregion: country.subregion,
-          capital: country.capital,
-        };
-      });
-
-      setCountries(transformedCountries);
-    };
-
-    fetchCountries(
-      { url: 'https://restcountries.com/v3.1/all' },
-      transformCountries
-    );
-  }, [fetchCountries]);
+  const { isLoading, error } = props;
 
   let content = <p className="centered-text">Found no countries.</p>;
 
