@@ -11,7 +11,7 @@ const Country = (props) => {
   const countryClasses = `${classes.country} ${
     themeCtx.isDarkThemeActive
       ? `dark-element ${classes['country-shadow']}`
-      : 'light-element shadow'
+      : 'shadow'
   }`;
 
   return (
@@ -25,7 +25,7 @@ const Country = (props) => {
           />
           <div
             className={
-              themeCtx.isDarkThemeActive ? 'dark-element' : 'light-element'
+              themeCtx.isDarkThemeActive ? 'dark-element' : 'light-mode'
             }
           >
             <h3>{props.name}</h3>

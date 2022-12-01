@@ -9,7 +9,7 @@ const Header = () => {
   const themeCtx = useContext(ThemeContext);
 
   const headerClasses = `${classes.header} ${
-    themeCtx.isDarkThemeActive ? 'dark-element shadow' : 'light-element shadow'
+    themeCtx.isDarkThemeActive ? 'dark-element shadow' : 'shadow'
   }`;
 
   return (

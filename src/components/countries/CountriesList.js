@@ -21,11 +21,11 @@ const CountriesList = (props) => {
     .filter((country) => region === '' || country.region === region);
 
   const sectionClasses = `${classes.section} ${
-    themeCtx.isDarkThemeActive ? 'dark-mode' : 'light-mode'
+    themeCtx.isDarkThemeActive ? 'dark-mode' : ''
   }`;
 
   const inputClasses = `${classes.input} ${
-    themeCtx.isDarkThemeActive ? 'dark-element' : 'light-element'
+    themeCtx.isDarkThemeActive ? 'dark-element' : 'light-mode'
   }`;
 
   const noMatchClasses = `${classes.noMatch} ${
@@ -37,9 +37,7 @@ const CountriesList = (props) => {
       <div className={inputClasses}>
         <FontAwesomeIcon icon={faSearch} className={classes.icon} />
         <input
-          className={
-            themeCtx.isDarkThemeActive ? 'dark-element' : 'light-element'
-          }
+          className={themeCtx.isDarkThemeActive ? 'dark-element' : ''}
           type="search"
           placeholder="Search for a country..."
           onChange={(evt) => setQuery(evt.target.value)}

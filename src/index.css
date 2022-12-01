@@ -21,11 +21,13 @@ ul {
 }
 
 .centered-text {
-  color: white;
   text-align: center;
+  margin: 0;
+  padding-top: 2rem;
+  min-height: calc(100vh - 80px);
 }
 
-.light-element {
+.light-mode {
   background-color: hsl(0, 0%, 100%);
   color: hsl(200, 15%, 8%);
 }
@@ -41,5 +43,5 @@ ul {
 }
 
 .shadow {
-  box-shadow: 0 0 8px hsl(0, 0%, 82%);
+  box-shadow: 0 0 8px 2px hsl(0, 0%, 82%);
 }
