@@ -35,7 +35,7 @@ const CountryDetail = (props) => {
   }
 
   const sectionClasses = `${classes.section} ${
-    themeCtx.isDarkThemeActive ? 'dark-mode' : 'light-mode'
+    themeCtx.isDarkThemeActive ? 'dark-mode' : ''
   }`;
 
   const countryDetailsClasses = `${classes['country-details']} ${
