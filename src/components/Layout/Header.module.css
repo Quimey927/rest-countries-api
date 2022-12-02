@@ -18,6 +18,10 @@ header h3 {
   font-size: 0.8rem;
 }
 
+.header button:hover {
+  opacity: 0.6;
+}
+
 .icon {
   margin-right: 0.5rem;
 }
