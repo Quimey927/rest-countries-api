@@ -5,7 +5,7 @@ import CountriesContext from './store/countries-context';
 import Layout from './components/Layout/Layout';
 import AllCountries from './pages/AllCountries';
 import DetailsPage from './pages/DetailsPage';
-import useHttp from './hooks/use-http';
+import useHttp from './hooks/useHttp';
 import addDots from './utils/add-dots';
 
 const App = () => {

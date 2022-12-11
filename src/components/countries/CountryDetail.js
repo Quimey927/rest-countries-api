@@ -43,7 +43,7 @@ const CountryDetail = (props) => {
   }`;
 
   const buttonClasses = `${classes.button} ${
-    themeCtx.isDarkThemeActive ? 'dark-element' : 'light-element'
+    themeCtx.isDarkThemeActive ? 'dark-element' : 'light-mode'
   }`;
 
   return (

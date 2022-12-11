@@ -12,9 +12,11 @@ const Header = () => {
     themeCtx.isDarkThemeActive ? 'dark-element shadow' : 'shadow'
   }`;
 
-  const icon = themeCtx.isDarkThemeActive ?
-  <FontAwesomeIcon className={classes.icon} icon={faSun} /> :
-  <FontAwesomeIcon className={classes.icon} icon={faMoon} />
+  const icon = themeCtx.isDarkThemeActive ? (
+    <FontAwesomeIcon className={classes.icon} icon={faSun} />
+  ) : (
+    <FontAwesomeIcon className={classes.icon} icon={faMoon} />
+  );
 
   return (
     <header className={headerClasses}>
